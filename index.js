@@ -19,7 +19,7 @@ const humanizeDuration = require("humanize-duration");
 
 client.on("ready", () => {
   console.log(`Logged in as : ${client.user.username}`);
-  client.user.setActivity(`${prefix}Help`);
+  client.user.setActivity(`${prefix}Help بـوي فـقـط`);
   client.user.setStatus("idle");
 });
 
