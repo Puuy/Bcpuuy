@@ -20,7 +20,7 @@ const humanizeDuration = require("humanize-duration");
 
 client.on("ready", () => {
   console.log(`Logged in as : ${client.user.username}`);
-  client.user.setActivity(`بووي و حكسر بس`);
+  client.user.setActivity(`بيوي و حكسر بس`);
   client.user.setStatus("idle");
 });
 const owners = ["455108784579149835", "527826654660132890"]
@@ -219,7 +219,7 @@ client.on("message", async message => {
                         await  me.guild.members.filter(m => m.presence.status !== 'offline').forEach( async m => {
                           if(m.id != client.user.id && !m.user.bot)
                           
-                          await me.send(`${args}\n ${m}`).then(()=>{
+                          await m.send(`${args}\n ${m}`).then(()=>{
                              ll.edit(new Discord.RichEmbed()
                              .setDescription(`**تم ارسال بنجاح الى \`${number}\`** \n ** فشل ارسال الى \`${errornumber}\` **`).addField(`**اخر شخص تم ارسال له:**`, m).setColor('GREEN').setFooter(me.guild.name, me.guild.iconURL)/*.setAuthor(me.author.username, me.author.avatarURL()).setTimestamp()*/)
                         number++
@@ -289,7 +289,7 @@ number1++
                             await  me.guild.members.filter(m => m.presence.status !== 'offline').forEach( async m => {
                               if(m.id != client.user.id && !m.user.bot)
                               
-                              await me.send(`${args}\n ${m}`).then(()=>{
+                              await m.send(`${args}\n ${m}`).then(()=>{
                                  ll.edit(new Discord.RichEmbed()
                                  .setDescription(`**تم ارسال بنجاح الى \`${number}\`** \n ** فشل ارسال الى \`${errornumber}\` **`).addField(`**اخر شخص تم ارسال له:**`, m).setColor('GREEN').setFooter(me.guild.name, me.guild.iconURL)/*.setAuthor(me.author.username, me.author.avatarURL()).setTimestamp()*/)
                             number++
@@ -357,7 +357,7 @@ number1++
                                 await  me.guild.members.filter(m => m.presence.status !== 'offline').forEach( async m => {
                                   if(m.id != client.user.id && !m.user.bot)
                                   
-                                  await me.send(`${args}\n ${m}`).then(()=>{
+                                  await m.send(`${args}\n ${m}`).then(()=>{
                                      ll.edit(new Discord.RichEmbed()
                                      .setDescription(`**تم ارسال بنجاح الى \`${number}\`** \n ** فشل ارسال الى \`${errornumber}\` **`).addField(`**اخر شخص تم ارسال له:**`, m).setColor('GREEN').setFooter(me.guild.name, me.guild.iconURL)/*.setAuthor(me.author.username, me.author.avatarURL()).setTimestamp()*/)
                                 number++
@@ -425,7 +425,7 @@ number1++
                                     await  me.guild.members.filter(m => m.presence.status !== 'offline').forEach( async m => {
                                       if(m.id != client.user.id && !m.user.bot)
                                       
-                                      await me.send(`${args}\n ${m}`).then(()=>{
+                                      await m.send(`${args}\n ${m}`).then(()=>{
                                          ll.edit(new Discord.RichEmbed()
                                          .setDescription(`**تم ارسال بنجاح الى \`${number}\`** \n ** فشل ارسال الى \`${errornumber}\` **`).addField(`**اخر شخص تم ارسال له:**`, m).setColor('GREEN').setFooter(me.guild.name, me.guild.iconURL)/*.setAuthor(me.author.username, me.author.avatarURL()).setTimestamp()*/)
                                     number++
@@ -492,7 +492,7 @@ number1++
                                         await  me.guild.members.filter(m => m.presence.status !== 'offline').forEach( async m => {
                                           if(m.id != client.user.id && !m.user.bot)
                                           
-                                          await me.send(`${args}\n ${m}`).then(()=>{
+                                          await m.send(`${args}\n ${m}`).then(()=>{
                                              ll.edit(new Discord.RichEmbed()
                                              .setDescription(`**تم ارسال بنجاح الى \`${number}\`** \n ** فشل ارسال الى \`${errornumber}\` **`).addField(`**اخر شخص تم ارسال له:**`, m).setColor('GREEN').setFooter(me.guild.name, me.guild.iconURL)/*.setAuthor(me.author.username, me.author.avatarURL()).setTimestamp()*/)
                                         number++
