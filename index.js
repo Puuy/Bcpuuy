@@ -20,10 +20,10 @@ const humanizeDuration = require("humanize-duration");
 
 client.on("ready", () => {
   console.log(`Logged in as : ${client.user.username}`);
-  client.user.setActivity(`بيوي و حكسر بس`);
+  client.user.setActivity(`بويي و حكسر بس`);
   client.user.setStatus("idle");
 });
-const owners = ["455108784579149835", "527826654660132890"]
+const owners = ["455108784579149835", "527826654660132890", "352460871856947200", "665309785544982531", "609544947816988702", "505442667652448277", "732158721257635932",]
 var prefix = "-"; 
 
 client.on("message", async message => {
