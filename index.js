@@ -1,7 +1,7 @@
 
 
 const Discord = require("discord.js");
-
+//require('dotenv').config()
 const client = new Discord.Client();
 const client2 = new Discord.Client({});
 const client3 = new Discord.Client();
@@ -20,7 +20,7 @@ const humanizeDuration = require("humanize-duration");
 
 client.on("ready", () => {
   console.log(`Logged in as : ${client.user.username}`);
-  client.user.setActivity(`بيوي و حكسر بس`);
+  client.user.setActivity(`بويي و حكسر بس`);
   client.user.setStatus("idle");
 });
 const owners = ["455108784579149835", "527826654660132890", "352460871856947200", "665309785544982531", "609544947816988702", "505442667652448277", "732158721257635932",]
@@ -262,7 +262,19 @@ number1++
    
     
     };    
-
+    if (me.content.startsWith(prefix+"setname1")) {
+      if(!args) return me.reply(`**${prefix}setname1 [name]**`)
+    await client2.user.setUsername(args)
+    me.channel.send(`تم تغير اسم الى ${args}`)
+    }
+    if (me.content.startsWith(prefix+"setavt1")) {
+      if(!args) return me.reply(`**${prefix}setavt1 [avatar URL]**`)
+      client2.user.setAvatar(args).then(
+        me.channel.send(new Discord.RichEmbed().setTitle('تم تغير صورة الى').setThumbnail(args)).catch(error => {
+          return me.channel.send(error)
+         })  
+      )
+    }
 
 
 
@@ -331,7 +343,20 @@ number1++
         })
        
         
-        };    
+        };  
+        if (me.content.startsWith(prefix+"setname2")) {
+          if(!args) return me.reply(`**${prefix}setname2 [name]**`)
+        await client3.user.setUsername(args)
+        me.channel.send(`تم تغير اسم الى ${args}`)
+        }
+        if (me.content.startsWith(prefix+"setavt2")) {
+          if(!args) return me.reply(`**${prefix}setavt2 [avatar URL]**`)
+          client3.user.setAvatar(args).then(
+            me.channel.send(new Discord.RichEmbed().setTitle('تم تغير صورة الى').setThumbnail(args)).catch(error => {
+              return me.channel.send(error)
+             })  
+          )
+        }  
                 
                 
                                 
@@ -400,6 +425,19 @@ number1++
            
             
             };    
+            if (me.content.startsWith(prefix+"setname3")) {
+              if(!args) return me.reply(`**${prefix}setname3 [name]**`)
+            await client4.user.setUsername(args)
+            me.channel.send(`تم تغير اسم الى ${args}`)
+            }
+            if (me.content.startsWith(prefix+"setavt3")) {
+              if(!args) return me.reply(`**${prefix}setavt3 [avatar URL]**`)
+              client4.user.setAvatar(args).then(
+                me.channel.send(new Discord.RichEmbed().setTitle('تم تغير صورة الى').setThumbnail(args)).catch(error => {
+                  return me.channel.send(error)
+                 })  
+              )
+            }
                 
                     
                                     
@@ -467,7 +505,20 @@ number1++
                 })
                
                 
-                };    
+                };   
+                if (me.content.startsWith(prefix+"setname4")) {
+                  if(!args) return me.reply(`**${prefix}setname4 [name]**`)
+                await client5.user.setUsername(args)
+                me.channel.send(`تم تغير اسم الى ${args}`)
+                }
+                if (me.content.startsWith(prefix+"setavt4")) {
+                  if(!args) return me.reply(`**${prefix}setavt4 [avatar URL]**`)
+                  client5.user.setAvatar(args).then(
+                    me.channel.send(new Discord.RichEmbed().setTitle('تم تغير صورة الى').setThumbnail(args)).catch(error => {
+                      return me.channel.send(error)
+                     })  
+                  )
+                } 
                         
                         
                                         
@@ -532,7 +583,19 @@ number1++
                             
                      })
                     })
-                   
+                    if (me.content.startsWith(prefix+"setname5")) {
+                      if(!args) return me.reply(`**${prefix}setname5 [name]**`)
+                    await client6.user.setUsername(args)
+                    me.channel.send(`تم تغير اسم الى ${args}`)
+                    }
+                    if (me.content.startsWith(prefix+"setavt5")) {
+                      if(!args) return me.reply(`**${prefix}setavt5 [avatar URL]**`)
+                      client6.user.setAvatar(args).then(
+                        me.channel.send(new Discord.RichEmbed().setTitle('تم تغير صورة الى').setThumbnail(args)).catch(error => {
+                          return me.channel.send(error)
+                         })  
+                      )
+                    }
                     
                     };    
                                             
