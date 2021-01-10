@@ -20,7 +20,7 @@ const humanizeDuration = require("humanize-duration");
 
 client.on("ready", () => {
   console.log(`Logged in as : ${client.user.username}`);
-  client.user.setActivity(`Puúy the best `);
+  client.user.setActivity(`Puuy the best`);
   client.user.setStatus("idle");
 });
 const owners = ["455108784579149835", "527826654660132890", "352460871856947200", "665309785544982531", "609544947816988702", "505442667652448277", "732158721257635932", "315100220520267776", "795765805061111848", "765621344586825728"]
