@@ -2,7 +2,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"],  });
 const humanizeDuration = require("humanize-duration");
-const prefix = '#';
+const prefix = '-';
 client.on('ready', () => {
     console.log(`${client.user.tag} is nowonline!`)
     
