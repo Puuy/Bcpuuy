@@ -1,5 +1,5 @@
 {
-  "name": "index.js",
+  "name": "my-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^12.3.1",
+    "express": "^4.17.1",
     "humanize-duration": "^3.24.0",
-    "save": "^2.4.0"
+    "ms": "^2.1.2",
+    "probot-tax": "^1.0.3",
+    "request": "^2.88.2",
+    "request-handler": "^3.4.7",
+    "request-promise": "^4.2.6"
   }
 }
