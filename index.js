@@ -177,3 +177,6 @@ if(message.content.includes(`${prefix}bc5`)) {
  await bc_send(message, 'bc', content_bc)
 }
 })
+
+
+Im its puuy + Fuke you
