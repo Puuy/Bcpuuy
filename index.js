@@ -18,7 +18,7 @@ const prefix = '-'
 const ownres = ["455108784579149835", "527826654660132890", "352460871856947200", "665309785544982531", "609544947816988702", "505442667652448277", "732158721257635932", "315100220520267776", "795765805061111848", "765621344586825728" , "734355052075941938" ,  ]
 //module.exports = ownres555
 //--------------------------------------تشغيل بوت و مونقو دي بي----------------------------------------------------//
-client.login(process.env.token);
+client.login('ODI4Mjk1MDIwNjE5NjI4NjQ0.YGnf2Q.p9cubuE_FRsi9SR2EMBqZ6AJ8bw');
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 module.exports = client
@@ -177,6 +177,3 @@ if(message.content.includes(`${prefix}bc5`)) {
  await bc_send(message, 'bc', content_bc)
 }
 })
-
-
-Im its puuy + Fuke you
