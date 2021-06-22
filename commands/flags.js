@@ -13,7 +13,7 @@ const {Message, Guild, Client, Channel} = require('discord.js')
 
 module.exports.run = async (client, message, args, prefix) => {
       //  if(message.guild.id)
-            if(!message.guild.me.hasPermission("ADMINISTRATOR",)) return
+            if(!message.member.hasPermission("ADMINISTRATOR",)) return
             if(!args[1]) return
             const badge = args[1].toUpperCase()
             const flas = ['DISCORD_EMPLOYEE', 'DISCORD_PARTNER', 'BUGHUNTER_LEVEL_1', 'BUGHUNTER_LEVEL_2', 'HYPESQUAD_EVENTS', 'HOUSE_BRAVERY', 'HOUSE_BRILLIANCE', 'HOUSE_BALANCE', 'EARLY_SUPPORTER', 'TEAM_USER', 'SYSTEM', 'VERIFIED_BOT', 'VERIFIED_DEVELOPER']
