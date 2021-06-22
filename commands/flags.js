@@ -1,10 +1,8 @@
-const mongoose  = require("mongoose");
+
 const used = new Map();
 const {UserFlags} = require('discord.js')
-const ms = require('ms')
 const Discord = require('discord.js')
 const {Message, Guild, Client, Channel} = require('discord.js')
-const duration = require("humanize-duration");
 /**
  * 
  * @param {Client} client 
